@@ -26,3 +26,17 @@ sudo apt-get install libpcap-dev
 
 * Npcap 1.80 installer for Windows 7/2008R2, 8/2012, 8.1/2012R2, 10/2016, 2019, 11 (x86, x64, and ARM64).
 
+
+## 執行測試
+需要三個 session
+分別執行 server.go capture.go client.go
+```
+cd tcp_3wayAnd4left/server
+go run server.go
+
+cd tcp_3wayAnd4left/pcap
+go run capture.go
+
+cd tcp_3wayAnd4left/client
+go run client.go
+```
